@@ -1,0 +1,28 @@
+{
+  "name": "@qmoosa/stablecoin-protocol",
+  "version": "1.0.0",
+  "description": "QMOOSA Stablecoin Protocol — CDP Specifications, Stability Fee Math & EVM Vault Contracts",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test tests/protocol.test.mjs && cd contracts && forge test -vv",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "qmoosa",
+    "stablecoin",
+    "cdp",
+    "protocol",
+    "solidity",
+    "foundry",
+    "defi"
+  ],
+  "author": "elon00",
+  "license": "MIT"
+}
